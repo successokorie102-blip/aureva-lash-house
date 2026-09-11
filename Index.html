@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AUREVA LASH HOUSE | Luxury in Every Blink</title>
+<link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: #fff5f7;
+            color: #4a252d;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            background: #f8dce3;
+            padding: 18px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav h2 {
+            color: #8d4d5c;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6b3441;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background: linear-gradient(
+                135deg,
+                #fff5f7,
+                #f8dce3,
+                #f3c5d0
+            );
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 70px;
+            letter-spacing: 6px;
+            color: #8d4d5c;
+            margin-bottom: 10px;
+        }
+
+        .hero h3 {
+            letter-spacing: 5px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #8d4d5c;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #6b3441;
+            transform: scale(1.05);
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 38px;
+            color: #8d4d5c;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* PRICE CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(120, 60, 70, 0.12);
+            border: 1px solid #f1cbd4;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #8d4d5c;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .price {
+            font-size: 22px;
+            font-weight: bold;
+            color: #a65c6b;
+        }
+
+        /* MENU */
+
+        .menu-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .menu-item {
+            background: white;
+            margin: 12px 0;
+            padding: 18px 22px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            box-shadow: 0 3px 12px rgba(120, 60, 70, 0.08);
+        }
+
+        .menu-item span:last-child {
+            font-weight: bold;
+            color: #a65c6b;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background: #f8dce3;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #6b3441;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero h3 {
+                font-size: 18px;
+            }
+
+            .hero p {
+                font-size: 19px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .menu-item {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+    <div class="logo">
+        AUREVA
+        <span>LASH HOUSE</span>
+    </div>
+
+    <div class="nav-links">
+
+        <a href="javascript:document.getElementById('home').scrollIntoView({behavior:'smooth'});">Home</a>
+
+<a href="javascript:document.getElementById('services').scrollIntoView({behavior:'smooth'});">Services</a>
+
+<a href="javascript:document.getElementById('clusters').scrollIntoView({behavior:'smooth'});">Clusters</a>
+
+<a href="javascript:document.getElementById('gallery').scrollIntoView({behavior:'smooth'});">Gallery</a>
+
+<a href="javascript:document.getElementById('contact').scrollIntoView({behavior:'smooth'});">Book</a>
+<button type="button" class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+    Book Your Appointment ♡
+</button>
+
+    </div>
+
+</nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>AUREVA</h1>
+
+            <h3>LASH HOUSE</h3>
+
+            <p>Luxury in Every Blink.</p>
+
+            <button type="button" class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+    Book Now
+</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section>
+
+        <h2 class="section-title">
+            Pretty Eyes, Happier You ♡
+        </h2>
+
+        <p class="about">
+            Welcome to AUREVA Lash House — your destination for
+            beautiful, luxurious lashes. From natural elegance to
+            bold volume, we create lash styles designed to match
+            your personality and your mood.
+        </p>
+
+    </section>
+
+
+    <!-- EXTENSIONS -->
+
+    <section id="services">
+
+        <h2 class="section-title">
+            Extension Collection
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Classic</h3>
+                <p>Natural and elegant</p>
+                <div class="price">₦8,000</div>
+            </div>
+
+            <div class="card">
+                <h3>Hybrid</h3>
+                <p>Soft volume with definition</p>
+                <div class="price">₦10,000</div>
+            </div>
+
+            <div class="card">
+                <h3>Volume</h3>
+                <p>Fuller and glamorous</p>
+                <div class="price">₦13,000</div>
+            </div>
+
+            <div class="card">
+                <h3>Mega Volume</h3>
+                <p>Maximum drama</p>
+                <div class="price">₦15,000</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EYE STYLES -->
+
+    <section>
+
+        <h2 class="section-title">
+            Eye Styles
+        </h2>
+
+        <div class="menu-list">
+
+            <div class="menu-item">
+                <span>Cat Eye – Natural</span>
+                <span>₦8,000</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Cat Eye – Volume</span>
+                <span>₦10,000</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Doll Eye – Natural</span>
+                <span>₦8,000</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Doll Eye – Volume</span>
+                <span>₦10,000</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Cat Eye with Spikes</span>
+                <span>₦9,000</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Doll Eye with Spikes</span>
+                <span>₦9,000</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CLUSTERS -->
+
+    <section id="clusters">
+
+        <h2 class="section-title">
+            Cluster Collection
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Cat Eye Cluster</h3>
+                <div class="price">₦4,000</div>
+            </div>
+
+            <div class="card">
+                <h3>Classic Wispy Cluster</h3>
+                <div class="price">₦4,500</div>
+            </div>
+
+            <div class="card">
+                <h3>Doll Eye Cluster</h3>
+                <div class="price">₦4,000</div>
+            </div>
+
+            <div class="card">
+                <h3>Doll Eye Wispy Cluster</h3>
+                <div class="price">₦4,500</div>
+            </div>
+
+            <div class="card">
+                <h3>Manga Cluster</h3>
+                <div class="price">₦4,500</div>
+            </div>
+
+            <div class="card">
+                <h3>Anime Cluster</h3>
+                <div class="price">₦4,500</div>
+            </div>
+
+            <div class="card">
+                <h3>Squirrel Cluster</h3>
+                <div class="price">₦5,000</div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXTRAS -->
+
+    <section>
+
+        <h2 class="section-title">
+            Extras
+        </h2>
+
+        <div class="menu-list">
+
+            <div class="menu-item">
+                <span>Bottoms</span>
+                <span>₦2,000</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Removal</span>
+                <span>₦1,000</span>
+            </div>
+
+            <div class="menu-item">
+                <span>Extra Individual Clusters / Lashes</span>
+                <span>₦500</span>
+            </div>
+
+        </div>
+
+        </section>
+
+    <!-- LASH GALLERY -->
+
+    <section id="gallery">
+
+
+    <h2 class="section-title">
+        Our Lash Gallery
+    </h2>
+
+    <p class="about">
+        Discover your perfect lash look.
+        Soft, wispy or bold — choose your AUREVA style. ♡
+    </p>
+
+    <div class="gallery">
+
+        <div class="gallery-card">
+    <img 
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Eyelash%20Extension%20Picture.jpg"
+        alt="Classic eyelash extensions"
+    >
+    <h3>Classic</h3>
+    <p>Soft • Natural • Elegant</p>
+</div>
+
+        <div class="gallery-card">
+    <img
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Types_extensions1.webp"
+        alt="Hybrid eyelash extensions"
+    >
+    <h3>Hybrid</h3>
+    <p>Wispy • Defined • Beautiful</p>
+</div>
+
+      <div class="gallery-card">
+    <img
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Eyelash.jpg"
+        alt="Volume eyelash extensions"
+    >
+    <h3>Volume</h3>
+    <p>Full • Fluffy • Glamorous</p>
+</div>
+
+        <div class="gallery-card">
+    <img
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Eye_Lash_Extensions.png"
+        alt="Cat eye eyelash extensions"
+    >
+    <h3>Cat Eye</h3>
+    <p>Lifted • Elegant • Bold</p>
+</div>
+
+        <div class="gallery-card">
+    <img
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Eyelash_Extension_Picture.jpg"
+        alt="Doll eye eyelash extensions"
+    >
+    <h3>Doll Eye</h3>
+    <p>Bright • Soft • Feminine</p>
+</div>
+
+        <div class="gallery-card">
+    <img
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Eyelash_Extension_Picture.jpg"
+        alt="Wispy eyelash extensions"
+    >
+    <h3>Wispy</h3>
+    <p>Light • Flirty • Effortless</p>
+</div>
+
+    </div>
+
+</section>
+
+
+<p style="text-align:center; font-size:12px; color:#777; margin:20px; line-height:1.7;">
+    Image credits:
+    SRozenbaum,
+    Harveenban,
+    Criteria Pro Lash,
+    and Lauren.
+    Images licensed under
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+       target="_blank">
+        CC BY-SA 4.0
+    </a>
+    via Wikimedia Commons.
+</p>
+
+
+
+    <!-- WHY CHOOSE US -->
+
+<section class="why-us">
+
+    <h2 class="section-title">
+        Why AUREVA?
+    </h2>
+
+    <div class="features">
+
+        <div class="feature">
+            <div class="feature-icon">♡</div>
+            <h3>Skilled Artist</h3>
+            <p>
+                Beautiful lash styling with attention to detail.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">✦</div>
+            <h3>Premium Products</h3>
+            <p>
+                Quality products for a comfortable lash experience.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">✧</div>
+            <h3>Clean & Safe</h3>
+            <p>
+                Your comfort and hygiene always come first.
+            </p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">♡</div>
+            <h3>Your Satisfaction</h3>
+            <p>
+                Every appointment is created around your desired look.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- BOOKING CTA -->
+
+<section class="booking-cta">
+
+    <h2 class="section-title">
+        Ready for Your Lash Transformation?
+    </h2>
+
+    <p class="about">
+        Your perfect lash look is waiting for you. ♡
+    </p>
+
+    <button
+        type="button"
+        class="btn"
+        onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});"
+    >
+        Book Your Appointment ♡
+    </button>
+
+</section>
+<section class="testimonials">
+
+    <h2 class="section-title">
+        What Our Clients Say
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <p>
+                "Absolutely loved my lashes! They looked soft and beautiful."
+            </p>
+            <br>
+            <strong>— Client</strong>
+        </div>
+
+        <div class="card">
+            <p>
+                "AUREVA gives the perfect luxury lash experience."
+            </p>
+            <br>
+            <strong>— Client</strong>
+        </div>
+
+        <div class="card">
+            <p>
+                "Beautiful service and amazing results!"
+            </p>
+            <br>
+            <strong>— Client</strong>
+        </div>
+
+    </div>
+
+</section>
+<!-- LASH CARE -->
+
+<section class="lash-care">
+
+    <h2 class="section-title">
+        Lash Care Tips
+    </h2>
+
+    <p class="about">
+        Keep your lashes looking beautiful and fresh with these simple care tips. ♡
+    </p>
+
+    <div class="care-list">
+
+        <div class="care-item">
+            <span>01</span>
+            <h3>Keep Them Dry</h3>
+            <p>
+                Avoid getting your lashes wet immediately after your appointment.
+            </p>
+        </div>
+
+        <div class="care-item">
+            <span>02</span>
+            <h3>Be Gentle</h3>
+            <p>
+                Avoid rubbing or pulling your lashes to help them last longer.
+            </p>
+        </div>
+
+        <div class="care-item">
+            <span>03</span>
+            <h3>Clean Regularly</h3>
+            <p>
+                Keep your lashes clean with gentle, lash-friendly care.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="promise">
+
+<h2 class="section-title">
+    Our Promise to You
+</h2>
+
+<p class="about">
+    At AUREVA Lash House, every appointment is about making you feel confident,
+    comfortable and beautiful. ♡
+</p>
+
+<div class="promise-items">
+
+    <div>
+        <span>♡</span>
+        <h3>Beautiful Results</h3>
+        <p>
+            We create a lash look that suits your style and personality.
+        </p>
+    </div>
+
+    <div>
+        <span>✦</span>
+        <h3>Comfort First</h3>
+        <p>
+            Your comfort and experience matter throughout your appointment.
+        </p>
+    </div>
+
+    <div>
+        <span>✧</span>
+        <h3>Made With Care</h3>
+        <p>
+            Every set is created with patience, care and attention to detail.
+        </p>
+    </div>
+
+</div>
+
+</section>
+    <!-- CONTACT -->
+
+    <!-- BOOKING -->
+    <div class="booking-intro">
+    <h3>Ready to Book?</h3>
+
+    <p class="booking-note">
+        Please choose your preferred service and date.
+        We'll confirm your appointment through WhatsApp. ♡
+    </p>
+</div>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">
+        Book Your Appointment ♡
+    </h2>
+
+    <p>
+        Ready for your perfect lashes?
+    </p>
+
+    <form class="booking-form" id="bookingForm">
+
+        <input
+    type="text"
+    id="customerName"
+    placeholder="Your Name"
+    required
+>
+
+<input
+    type="tel"
+    id="phone"
+    placeholder="Phone Number"
+    required
+>
+
+<select id="service" required>
+
+    <option value="">
+        Choose Your Service
+    </option>
+
+    <option>Classic — ₦8,000</option>
+    <option>Hybrid — ₦10,000</option>
+    <option>Volume — ₦13,000</option>
+    <option>Mega Volume — ₦15,000</option>
+
+    <option>Cat Eye – Natural — ₦8,000</option>
+    <option>Cat Eye – Volume — ₦10,000</option>
+    <option>Doll Eye – Natural — ₦8,000</option>
+    <option>Doll Eye – Volume — ₦10,000</option>
+    <option>Cat Eye with Spikes — ₦9,000</option>
+    <option>Doll Eye with Spikes — ₦9,000</option>
+
+    <option>Cat Eye Cluster — ₦4,000</option>
+    <option>Classic Wispy Cluster — ₦4,500</option>
+    <option>Doll Eye Cluster — ₦4,000</option>
+    <option>Doll Eye Wispy Cluster — ₦4,500</option>
+    <option>Manga Cluster — ₦4,500</option>
+    <option>Anime Cluster — ₦4,500</option>
+    <option>Squirrel Cluster — ₦5,000</option>
+
+</select>
+
+
+<input
+    type="date"
+    id="appointmentDate"
+    required
+>
+
+<textarea
+    id="message"
+    placeholder="Any special request?"
+    rows="4"
+></textarea>
+
+<button type="submit" class="btn">
+    Request Appointment ♡
+</button>
+
+    </form>
+
+    <div class="contact-details">
+
+        <p>📞 09096775886</p>
+
+        <p>📸 @just_dami3</p>
+
+        <p>📍 UNIABJ</p>
+
+    </div>
+
+</section>
+
+<section class="tiktok-section">
+
+    <h2 class="section-title">
+    Follow AUREVA on TikTok
+</h2>
+
+    <p class="about">
+    See our latest lash transformations on TikTok.
+</p>
+
+    <a
+    href="https://www.tiktok.com/@just_dami3"
+        target="_blank"
+        class="btn"
+    >
+        Visit TikTok ♡
+    </a>
+
+</section>
+    <!-- FOOTER -->
+
+    <footer>
+    <div class="footer-logo">AUREVA</div>
+    <p>Luxury in Every Blink. ♡</p>
+
+    <div class="footer-contact">
+        <p>📍 UNIABJ</p>
+        <p>📞 <a href="tel:09096775886">09096775886</a></p>
+        <p>🎵 <a href="https://www.tiktok.com/@just_dami3" target="_blank">@just_dami3</a></p>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <p class="copyright">
+        © 2026 AUREVA LASH HOUSE. All Rights Reserved.
+    </p>
+</footer>
+<script>
+
+const bookingForm = document.getElementById("bookingForm");
+
+bookingForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("customerName").value;
+    const phone = document.getElementById("phone").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("appointmentDate").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappMessage =
+        "Hello AUREVA Lash House! ♡%0A%0A" +
+        "I would like to book an appointment.%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Service: " + service + "%0A" +
+        "Preferred Date: " + date + "%0A" +
+        "Special Request: " + message;
+
+    const whatsappNumber = "2349096775886";
+
+    const whatsappURL =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        whatsappMessage;
+
+  window.open(whatsappURL, "_blank");
+alert("Thank you for choosing AUREVA Lash House! ♡ Your booking request has been prepared for WhatsApp.");
+});
+</script>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+
+<a
+    href="https://wa.me/2349096775886"
+    class="whatsapp-button"
+    target="_blank"
+    aria-label="Chat with AUREVA on WhatsApp"
+>
+    💬
+</a>
+<button
+    type="button"
+    class="back-to-top"
+    onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'});"
+>
+    ↑
+</button>
+<script src="index.js"></script>
+
+</body>
+              </html>
