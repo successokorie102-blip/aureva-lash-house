@@ -1600,3 +1600,85 @@ section:nth-of-type(2) .about {
 .booking-form .btn:hover {
     box-shadow: 0 8px 18px rgba(120, 60, 70, 0.18);
 }
+/* AUREVA FINAL LUXURY POLISH */
+
+body {
+    letter-spacing: 0.2px;
+}
+
+section {
+    padding: 75px 20px;
+}
+
+.section-title {
+    color: #8d4d5c;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "✦";
+    position: absolute;
+    top: 15%;
+    left: 8%;
+    font-size: 30px;
+    color: #e5b1bd;
+    opacity: 0.6;
+}
+
+.hero::after {
+    content: "✦";
+    position: absolute;
+    bottom: 15%;
+    right: 8%;
+    font-size: 24px;
+    color: #e5b1bd;
+    opacity: 0.6;
+}
+
+.card,
+.gallery-card,
+.feature,
+.promise-items > div,
+.care-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover,
+.gallery-card:hover,
+.feature:hover,
+.promise-items > div:hover,
+.care-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(120, 60, 70, 0.14);
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 13px 25px;
+}
+
+.tiktok-section {
+    border-top: 1px solid #edc3cd;
+    border-bottom: 1px solid #edc3cd;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 55px 15px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .hero::before,
+    .hero::after {
+        display: none;
+    }
+}
