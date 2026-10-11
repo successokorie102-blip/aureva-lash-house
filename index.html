@@ -879,39 +879,38 @@
     </p>
 </footer>
 <script>
-
 const bookingForm = document.getElementById("bookingForm");
 
-bookingForm.addEventListener("submit", function(event) {
+if (bookingForm) {
+    bookingForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-    event.preventDefault();
+        const name = document.getElementById("customerName").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const service = document.getElementById("service").value;
+        const date = document.getElementById("appointmentDate").value;
+        const message = document.getElementById("message").value.trim();
 
-    const name = document.getElementById("customerName").value;
-    const phone = document.getElementById("phone").value;
-    const service = document.getElementById("service").value;
-    const date = document.getElementById("appointmentDate").value;
-    const message = document.getElementById("message").value;
+        const whatsappMessage = [
+            "Hello AUREVA Lash House! ♡",
+            "",
+            "I would like to request an appointment.",
+            "",
+            `Name: ${name}`,
+            `Phone: ${phone}`,
+            `Service: ${service}`,
+            `Preferred Date: ${date}`,
+            `Special Request: ${message || "None"}`
+        ].join("\n");
 
-    const whatsappMessage =
-        "Hello AUREVA Lash House! ♡%0A%0A" +
-        "I would like to book an appointment.%0A%0A" +
-        "Name: " + name + "%0A" +
-        "Phone: " + phone + "%0A" +
-        "Service: " + service + "%0A" +
-        "Preferred Date: " + date + "%0A" +
-        "Special Request: " + message;
+        const whatsappNumber = "2349096775886";
+        const whatsappURL =
+            "https://wa.me/" + whatsappNumber +
+            "?text=" + encodeURIComponent(whatsappMessage);
 
-    const whatsappNumber = "2349096775886";
-
-    const whatsappURL =
-        "https://wa.me/" +
-        whatsappNumber +
-        "?text=" +
-        whatsappMessage;
-
-  window.open(whatsappURL, "_blank");
-alert("Thank you for choosing AUREVA Lash House! ♡ Your booking request has been prepared for WhatsApp.");
-});
+        window.open(whatsappURL, "_blank");
+    });
+}
 </script>
 
 <!-- FLOATING WHATSAPP BUTTON -->
